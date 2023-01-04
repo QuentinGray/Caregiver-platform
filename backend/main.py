@@ -30,6 +30,29 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
+@app.post("/calendar")
+def post_calendar():
+    pcalendar = queries.post_calendar()
+    return pcalendar
+
+
+get read
+put update
+delete delete
+
+
+
+
+
+
+
+
+
+
+
+
+
 @app.get("/hello")
 def hello():
     return "hi"
